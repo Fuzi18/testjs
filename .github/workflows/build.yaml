@@ -18,8 +18,8 @@ jobs:
     - run: npm install
     - run: npx sass ./sass/style.scss ./build/css/style.css
     - run: ls -lha ./build/css/
-     - name: Build
-        uses: actions/upload-artifact@v3
-        with:
-          name: cbuild
-          path: ./public    
+    - name: Build
+      uses: actions/upload-artifact@v3
+      with:
+        name: cbuild
+        path: ./public    
