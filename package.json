@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Fuzi18/testjs/issues"
   },
-  "homepage": "https://github.com/Fuzi18/testjs#readme"
+  "homepage": "https://github.com/Fuzi18/testjs#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
 }
