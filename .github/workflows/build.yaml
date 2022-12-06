@@ -17,4 +17,9 @@ jobs:
         node-version: 16.16
     - run: npm install
     - run: npx sass ./sass/style.scss ./build/css/style.css
-    - run: ls -lha ./build/css/      
+    - run: ls -lha ./build/css/
+     - name: Build
+        uses: actions/upload-artifact@v3
+        with:
+          name: cbuild
+          path: ./public    
