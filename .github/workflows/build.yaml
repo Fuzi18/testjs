@@ -12,9 +12,9 @@ jobs:
     steps:
     - uses: action/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.16
     - run: npm install
     - run: npx sass ./sass/style.scss ./build/css/style.css
     - run: ls -lha ./build/css/      
